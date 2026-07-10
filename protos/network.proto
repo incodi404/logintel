@@ -1,0 +1,75 @@
+syntax = "proto3";
+package network;
+option go_package = "github.com/incodi404/logintel/pb";
+
+import "google/protobuf/timestamp.proto";
+
+message ISSSLog {
+    string oldState = 1;
+    string newState = 2;
+    uint32 sPort = 3;
+    uint32 dPort = 4;
+    string family = 5;
+    string protocol = 6;
+    string sAddr = 7;
+    string dAddr = 8;
+    int64 pid = 9;
+    string name  = 10;
+    string comm = 11;
+    int64 parent_process = 12;
+    google.protobuf.Timestamp timestamp = 13;
+    string agentId = 14;
+}
+
+message Connect4Log {
+    string userFamily = 1;
+    string userIPv4 = 2;
+    uint32 userPort = 3;
+    string family = 4;
+    string type = 5;
+    string protocol = 6;
+    uint32 uid = 7;
+    google.protobuf.Timestamp timestamp = 8;
+    int64 pid = 9;
+    string name  = 10;
+    string comm = 11;
+    int64 parent_process = 12;
+    string agentId = 13;
+}
+
+message Bind4Log {
+    string userFamily = 1;
+    string userIPv4 = 2;
+    uint32 userPort = 3;
+    string family = 4;
+    string type = 5;
+    string protocol = 6;
+    uint32 uid = 7;
+    google.protobuf.Timestamp timestamp = 8;
+    int64 pid = 9;
+    string name  = 10;
+    string comm = 11;
+    int64 parent_process = 12;
+    string agentId = 13;
+}
+
+message ISSSAck {
+    int64 totalChunks = 1;
+    string message = 2;
+}
+
+message Connect4Ack {
+    int64 totalChunks = 1;
+    string message = 2;
+}
+
+message Bind4Ack {
+    int64 totalChunks = 1;
+    string message = 2;
+}
+
+service NetworkLogUploader {
+    rpc ISSSUpload(stream ISSSLog) returns (ISSSAck);
+    rpc Connect4Upload(stream Connect4Log) returns (Connect4Ack);
+    rpc Bind4Upload(stream Bind4Log) returns (Bind4Ack);
+}

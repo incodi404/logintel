@@ -1,0 +1,23 @@
+blacklist:
+  path:
+    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2: true
+    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.6: true
+    /etc/ld.so.cache: true
+    /usr/lib/locale/locale-archive: true
+    /usr/bin/cat: true
+    /usr/lib/x86_64-linux-gnu/libc.so.6: true
+    /etc/locale.alias: true
+    /usr/bin/dash: true
+    /usr/lib/x86_64-linux-gnu/libcap.so.2.66: true
+    /usr/bin/sed: true
+    /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache: true
+    /home/dipankar/.config/Code/User/workspaceStorage/08422547442a1742e8b01f373de6804e/state.vscdb-journal: true
+
+  process_name:
+    cpuUsage.sh: true
+
+  cmd_name:
+    'sed -n s/^cpu\s//p /proc/stat': true
+    "/usr/bin/ps -ax -o pid=,ppid=,pcpu=,pmem=,command=": true
+    "sleep 1": true
+    '/bin/sh -c "/snap/code/241/usr/share/code/resources/app/out/vs/base/node/cpuUsage.sh" 4765 15364 15365 15366': true

@@ -1,0 +1,23 @@
+syntax = "proto3";
+package execve;
+option go_package = "github.com/incodi404/logintel/pb";
+
+import "google/protobuf/timestamp.proto";
+
+message ExecveLog {
+    int64 pid = 1;
+    string name  = 2;
+    string comm = 3;
+    int64 parent_process = 4;
+    google.protobuf.Timestamp timestamp = 5;
+    string agentId = 6;
+}
+
+message ExecveAck {
+    string message = 1;
+    int64 total_chunks = 2;
+}
+
+service ExecveLogUploader {
+    rpc ExecveUpload(stream ExecveLog) returns (ExecveAck);
+}

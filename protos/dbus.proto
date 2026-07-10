@@ -1,0 +1,29 @@
+syntax = "proto3";
+package dbus;
+option go_package = "github.com/incodi404/logintel/pb";
+
+import "google/protobuf/timestamp.proto";
+
+message DbusUnitLog {
+    string name = 1;
+    string description = 2;
+    string loadState = 3;
+    string activeState = 4;
+    string subState = 5;
+    string followed = 6;
+    string path = 7;
+    uint32 jobId = 8;
+    string jobType = 9;
+    string jobPath = 10;
+    google.protobuf.Timestamp timestamp = 11;
+    string agentId = 12;
+}
+
+message DbusUnitAck {
+    int64 totalChunks = 1;
+    string message = 2;
+}
+
+service DbusUbitUploader {
+    rpc DbusUnitUpload(stream DbusUnitLog) returns (DbusUnitAck);
+}

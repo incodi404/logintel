@@ -1,0 +1,25 @@
+syntax = "proto3";
+package fanotify;
+option go_package = "github.com/incodi404/logintel/pb";
+
+import "google/protobuf/timestamp.proto";
+
+message FanotifyLog {
+    int64 pid = 1;
+    string name  = 2;
+    string comm = 3;
+    int64 parent_process = 4;
+    google.protobuf.Timestamp timestamp = 5;
+    string path = 6;
+    repeated string events = 7;
+    string agentId = 8;
+}
+
+message FanotifyAck {
+    int64 totalChunks = 1;
+    string message = 2;
+}
+
+service FanotifyUploader {
+    rpc FanotifyUpload(stream FanotifyLog) returns (FanotifyAck);
+}

@@ -1,0 +1,18 @@
+[Unit]
+Description=Logintel Agent
+After=network-online.target
+Want=network-online.target
+
+[Service]
+User=root
+WorkingDirectory=/opt/agent
+ExecStart=/opt/agent/agent
+
+Restart=always
+RestartSec=5
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

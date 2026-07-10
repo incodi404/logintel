@@ -1,0 +1,26 @@
+syntax = "proto3";
+package exec;
+option go_package = "github.com/incodi404/logintel/pb";
+
+import "google/protobuf/timestamp.proto";
+
+// client-side data
+message ExecLog {
+    string filename = 1;
+    uint32 pid = 2;
+    uint32 old_pid = 3;
+    uint32 uid = 4;
+    string comm = 5;
+    google.protobuf.Timestamp timestamp = 6;
+    string agentId = 7;
+}
+
+// server side
+message ExecAck {
+    string message = 1;
+    int64 total_chunks = 2;
+}
+
+service ExecLogUploader {
+    rpc ExecUpload(stream ExecLog) returns (ExecAck);
+}
