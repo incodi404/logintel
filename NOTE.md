@@ -27,3 +27,5 @@ Problem: EXECVE hook is not working when we are trying to run EXEC and EXECVE pa
 Cause: handle_execve function is not attached when we are trying to run both. Only handle_exec is attached and that is why there was no logs.
 Bug in code: We are running "defer loaded.Collection.Close()" as soon as the function returns rd so when another function is trying to fetch log with the rd, the main function has already closed and handle_execve is already unattached to kernel.
 Fix: We moved defer loaded.Collection.Close()" to the collector. So now, the Link and Collection is closed when the log fetching is completed.
+
+A testing line
