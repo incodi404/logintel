@@ -1,5 +1,3 @@
 # Logintel Agent
 
----
-
 Logintel
