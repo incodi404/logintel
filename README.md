@@ -6,4 +6,4 @@ Logintel Agent is a Golang-based endpoint security agent. It collects events fro
 
 ---
 
-### The system is still under development and getting better day by day. The first release of the system will be within October, 2026.
+#### The system is still under development and getting better day by day. The first release of the system will be within October, 2026.
