@@ -41,7 +41,7 @@ Capturing the alteration of the status of systemd services to track service fail
 
 #### Command-and-control
 
-#### Information Table
+#### Log Information Table
 
 | Exec Logs    | Execve Logs  | ISSS Logs        | Connect4 Logs | Bind4 Logs   | Fanotify Logs | Dbus IPC Logs |
 | ------------ | ------------ | ---------------- | ------------- | ------------ | ------------- | ------------- |
