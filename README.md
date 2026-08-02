@@ -15,3 +15,16 @@ A detailed description of Logintel Agent about its abilities.
 The agent is able to capture each and every command that has been executed on the system. The successfully executed commands are logged differently and all types of command, whether successfully executed or not, are logged differently.
 
 #### Networking events
+
+It is capturing network events with 3 different scopes. The 3 scopes are -
+
+- ##### TCP/UDP Connection's State Change
+
+  Whenever a TCP/UDP connection changes its state, the event is captured. All the information regarding the connect (i.e, source IP address, destination IP address, source port, destination port, PID etc.) will be provided in the log.
+
+- ##### New TCP/UDP Connection
+
+  When the system initates a connection, the event is logged and all the information are captured.
+
+- ##### TCP Binding
+  When the `bind()` calls, the event is captured
