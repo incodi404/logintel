@@ -43,7 +43,15 @@ Capturing the alteration of the status of systemd services to track service fail
 
 The agent will have a C2 system that allows the admin to run command directly from browser to shell without any SSH fingerprint and extra authentication. The connection will be secured by mTLS. It is the incident response functionality that will be integrated with the agent.
 
-<!-- https://res.cloudinary.com/fwkfpmra/image/upload/f_auto,q_auto/Screenshot_2026-07-18_153906_b8pds9,  -->
+## Working Methodology
+
+1. Logintel Agent runs in the background with systemd. The modus operandi of the agent is to **consume minimal resource and provide maximum ouput**. View agent status with `sudo systemctl status logintel-agent`
+
+2. All the logs are being captured concurrently with goroutines.
+
+3. The job of the agent is just capturing the logs and streaming the logs to the server, rest of the work will be handled by the central server itself.
+
+4. Currently the agent is streaming the logs via gRPC Client Streaming. For now, the agent can only connect with the Logintel Central Server but we are going to integrate OTLP.
 
 ## Kibana Dashboard & Log Visualization
 
@@ -79,3 +87,16 @@ The agent will have a C2 system that allows the admin to run command directly fr
 |              |              | Process Name     | Command       | Command      |               |               |
 |              |              | Command          | PPID          | PPID         |               |               |
 |              |              | Timestamp        | Timestamp     | Timestamp    |               |               |
+
+## Installation
+
+```shell
+git clone https://github.com/incodi404/logintel.git
+cd logintel/scripts
+sudo ./install.sh
+sudo systemctl status logintel-agent
+```
+
+## Author
+
+Dipankar Chowdhury — Backend Engineer (Security Focused) | [GitHub](https://github.com/incodi404/) · [LinkedIn](https://www.linkedin.com/in/dipankar-chowdhury/)
