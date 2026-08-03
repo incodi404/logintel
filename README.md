@@ -258,19 +258,19 @@ func Exec_Log_Collector(
 
 ## Roadmap for v1
 
-- [x] eBPF log collection
-- [x] File operations logging
-- [x] Dbus service status alteration logging
-- [x] Streaming logs with gRPC Client streaming
-- [x] Collecting logs with Log Ingestion service
-- [x] Saving logs in Elasticsearch
-- [x] Log visualization in Kibana
-- [ ] Rule engine & alert generation
-- [ ] OTLP integration
-- [ ] C2 System
-- [ ] mTLS integration in gRPC
-- [ ] Agent authentication & Authorization with JWT
-- [ ] Admin panel
+- ✅ eBPF log collection
+- ✅ File operations logging
+- ✅ Dbus service status alteration logging
+- ✅ Streaming logs with gRPC Client streaming
+- ✅ Collecting logs with Log Ingestion service
+- ✅ Saving logs in Elasticsearch
+- ✅ Log visualization in Kibana
+- ⬜ Rule engine & alert generation
+- ⬜ OTLP integration
+- ⬜ C2 System
+- ⬜ mTLS integration in gRPC
+- ⬜ Agent authentication & Authorization with JWT
+- ⬜ Admin panel
 
 ## Installation
 
@@ -291,8 +291,8 @@ go build -o agent cmd/agent/main.go
 
 ## Tested environments
 
-- [x] Ubuntu 22.04 LTS
-- [x] Ubuntu 20.04 LTS
+- ✅ Ubuntu 22.04 LTS
+- ✅ Ubuntu 20.04 LTS
 
 ## Author
 
