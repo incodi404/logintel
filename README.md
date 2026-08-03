@@ -47,7 +47,7 @@ The agent will have a C2 system that allows the admin to run command directly fr
 
 ## Kibana Dashboard & Log Visualization
 
-![Single Resource Log Table](https://www.pexels.com/photo/fresh-whole-jicama-tubers-on-light-background-30875804/)
+![Single Resource Log Table](https://images.pexels.com/photos/30875804/pexels-photo-30875804.jpeg?_gl=1*sokfdi*_ga*MTgyOTUzMTU0NC4xNzg1NzU3NTkw*_ga_8JE65Q40S6*czE3ODU3NTc1ODkkbzEkZzAkdDE3ODU3NTc1ODkkajYwJGwwJGgw)
 
 ## Log Information Table
 
