@@ -43,7 +43,13 @@ Capturing the alteration of the status of systemd services to track service fail
 
 The agent will have a C2 system that allows the admin to run command directly from browser to shell without any SSH fingerprint and extra authentication. The connection will be secured by mTLS. It is the incident response functionality that will be integrated with the agent.
 
-#### Log Information Table
+<!-- https://drive.google.com/file/d/13IWlW6C8Gge-cyMLeileFq5FW20rNW42/view?usp=sharing, https://drive.google.com/file/d/15KIG__X_W5lWUrK5nZsBbyNhxHElOjwp/view?usp=sharing, https://drive.google.com/file/d/1EOxL5Y-Bo8s8r7UeWgS7ekaBOcPB4Yu4/view?usp=sharing, https://drive.google.com/file/d/1XJY-ZQm_RmuwupBttKPeARxsz9Ngr1dn/view?usp=sharing, https://drive.google.com/file/d/1lmo34OdaQpzWbmzGe5eZgDYIC5rQmohK/view?usp=sharing, https://drive.google.com/file/d/1zu6LDkXs7Val8NnDVNGhPBWgRLyFRkQD/view?usp=sharing -->
+
+## Kibana Dashboard & Log Visualization
+
+![Single Resource Log Table](https://drive.google.com/file/d/13IWlW6C8Gge-cyMLeileFq5FW20rNW42/view?usp=sharing)
+
+## Log Information Table
 
 | Exec Logs    | Execve Logs  | ISSS Logs        | Connect4 Logs | Bind4 Logs   | Fanotify Logs | Dbus IPC Logs |
 | ------------ | ------------ | ---------------- | ------------- | ------------ | ------------- | ------------- |
