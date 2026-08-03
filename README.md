@@ -43,11 +43,11 @@ Capturing the alteration of the status of systemd services to track service fail
 
 The agent will have a C2 system that allows the admin to run command directly from browser to shell without any SSH fingerprint and extra authentication. The connection will be secured by mTLS. It is the incident response functionality that will be integrated with the agent.
 
-<!-- https://drive.google.com/file/d/13IWlW6C8Gge-cyMLeileFq5FW20rNW42/view?usp=sharing, https://drive.google.com/file/d/15KIG__X_W5lWUrK5nZsBbyNhxHElOjwp/view?usp=sharing, https://drive.google.com/file/d/1EOxL5Y-Bo8s8r7UeWgS7ekaBOcPB4Yu4/view?usp=sharing, https://drive.google.com/file/d/1XJY-ZQm_RmuwupBttKPeARxsz9Ngr1dn/view?usp=sharing, https://drive.google.com/file/d/1lmo34OdaQpzWbmzGe5eZgDYIC5rQmohK/view?usp=sharing, https://drive.google.com/file/d/1zu6LDkXs7Val8NnDVNGhPBWgRLyFRkQD/view?usp=sharing -->
+<!-- https://res.cloudinary.com/fwkfpmra/image/upload/f_auto,q_auto/Screenshot_2026-07-18_153906_b8pds9,  -->
 
 ## Kibana Dashboard & Log Visualization
 
-![Single Resource Log Table](https://images.pexels.com/photos/30875804/pexels-photo-30875804.jpeg?_gl=1*sokfdi*_ga*MTgyOTUzMTU0NC4xNzg1NzU3NTkw*_ga_8JE65Q40S6*czE3ODU3NTc1ODkkbzEkZzAkdDE3ODU3NTc1ODkkajYwJGwwJGgw)
+![Single Resource Log Table] (https://res.cloudinary.com/fwkfpmra/image/upload/v1785757990/Screenshot_2026-07-18_154314_nkwr0e.png)
 
 ## Log Information Table
 
