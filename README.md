@@ -47,7 +47,7 @@ The agent will have a C2 system that allows the admin to run command directly fr
 
 ## Kibana Dashboard & Log Visualization
 
-![Single Resource Log Table] (https://res.cloudinary.com/fwkfpmra/image/upload/v1785757990/Screenshot_2026-07-18_154314_nkwr0e.png)
+![Single Resource Log Table](https://res.cloudinary.com/fwkfpmra/image/upload/v1785757990/Screenshot_2026-07-18_154314_nkwr0e.png)
 
 ## Log Information Table
 
