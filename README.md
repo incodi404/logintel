@@ -39,7 +39,9 @@ Due to high volume of logs, filtration functionality is implemented. Currently t
 
 Capturing the alteration of the status of systemd services to track service failures easily.
 
-#### Command-and-control
+#### Command-and-control (Under Development)
+
+The agent will have a C2 system that allows the admin to run command directly from browser to shell without any SSH fingerprint and extra authentication. The connection will be secured by mTLS. It is the incident response functionality that will be integrated with the agent.
 
 #### Log Information Table
 
