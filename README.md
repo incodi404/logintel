@@ -258,13 +258,13 @@ func Exec_Log_Collector(
 
 ## Roadmap for v1
 
-- [*] eBPF log collection
-- [*] File operations logging
-- [*] Dbus service status alteration logging
-- [*] Streaming logs with gRPC Client streaming
-- [*] Collecting logs with Log Ingestion service
-- [*] Saving logs in Elasticsearch
-- [*] Log visualization in Kibana
+- [x] eBPF log collection
+- [x] File operations logging
+- [x] Dbus service status alteration logging
+- [x] Streaming logs with gRPC Client streaming
+- [x] Collecting logs with Log Ingestion service
+- [x] Saving logs in Elasticsearch
+- [x] Log visualization in Kibana
 - [] Rule engine & alert generation
 - [] OTLP integration
 - [] C2 System
