@@ -4,8 +4,6 @@ Logintel is an open source security monitoring and control system. This is used 
 
 Logintel Agent is a Golang-based endpoint security agent, built for Linux. It collects events from kernel and streams those events to the central server. It is capable of collecting command execution events, network events, file operation events and systemd services status. It uses eBPF to capture most of the events directly from the kernel. The agent is able to execute commands on the system. It has command-and-control system within it that allows the agent to work as an Incident Response system.<br>
 
-#### The system is still under development and getting better day by day. The first release of the system will be within October, 2026.
-
 ## Agent Abilities
 
 A detailed description of Logintel Agent about its abilities.
@@ -271,6 +269,8 @@ func Exec_Log_Collector(
 - ⬜ mTLS integration in gRPC
 - ⬜ Agent authentication & Authorization with JWT
 - ⬜ Admin panel
+
+#### The system is still under development and getting better day by day. The first release of the system will be within October, 2026.
 
 ## Installation
 
